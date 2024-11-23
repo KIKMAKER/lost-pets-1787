@@ -1,6 +1,7 @@
 <h1>Found Pets</h1>
 
 <% @pets.each do |pet| %>
-  <%= pet.location %>
+  <p><%= link_to pet.location, pet_path(pet) %></p>
 <% end %>
 
+<%= link_to "found a pet?", new_pet_path, class: 'btn'  %>

@@ -1,0 +1,13 @@
+<div class="container my-5">
+  <h1>Edit a pet</h1>
+
+  <%= simple_form_for @pet do |f| %>
+    <%= f.input :date_found %>
+    <%= f.input :location %>
+    <%= f.submit class: "btn btn-primary" %>
+
+  <% end %>
+
+
+
+</div>

@@ -5,6 +5,6 @@ Rails.application.routes.draw do
   # root "articles#index"
   # get 'pets', to: "pets#index"
 
-  resources :pets, only: [:index, :show]
+  resources :pets, only: [:index, :show, :new, :create, :edit, :update, :destroy]
 
 end
